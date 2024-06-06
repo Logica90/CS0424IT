@@ -33,7 +33,7 @@ int main(){
         if(opzione == 'A'){
             //Inserimento nome. 
             printf("Inserisci nome: ");
-            fgets(nome, MAX, stdin);            //fgets evita di avere overflows tring
+            fgets(nome, MAX, stdin);            //fgets evita di avere overflow string
             nome[strcspn(nome, "\n")] = '\0';   //tramite questo comando elimino lo '\n'
             system("cls");
             punteggio = sessione(nome);         //chiamata funzione sessione
@@ -88,7 +88,7 @@ int nuova_domanda(int next_question){
         break;
         
         case 2:{
-            printf("\nQuali di questi non e' un Firewall?\nA - WAF 7\nB - PROXY\nC - Shell\n");
+            printf("\nQuali di questi non e' un Firewall?\nA - WAF 7\nB - NGF\nC - Shell\n");
             risposta = 'C';
         }
         break;
