@@ -46,7 +46,7 @@ while True:
                     break
 
             if param_1 != param_2:
-                risultato = str(int(param_1) * int(param_2))
+                risultato = str((int(param_1)*2) + (int(param_2)*2))
                 print(f"Il perimetro di un rettangolo avente base uguale a {param_1} e altezza uguale a {param_2} e': {risultato}")
                 input("Premi un tasto per continuare...")
                 break
